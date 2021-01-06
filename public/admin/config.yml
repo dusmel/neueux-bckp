@@ -1,10 +1,10 @@
+publish_mode: editorial_workflow
 backend:
-  # name: git-gateway
+  name: git-gateway
   branch: develop
-  name: test-repo
+  # name: test-repo
 media_folder: public/img
 public_folder: img
-publish_mode: editorial_workflow
 collections:
   - name: "Blog Posts"
     label: "Posts"
