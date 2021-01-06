@@ -1,31 +1,27 @@
-publish_mode: editorial_workflow
 backend:
-  name: git-gateway
+  name: github
+  repo: dusmel/neueux-bckp
   branch: develop
   # name: test-repo
+publish_mode: editorial_workflow
 media_folder: public/img
 public_folder: img
 collections:
-  - name: "Blog Posts"
-    label: "Posts"
+  - name: "content"
+    label: "Content"
     create: true
-    identifier_field: "title"
-    slug: "{{fields.slug}}"
     folder: "content"
     fields:
           - { label: "Title", name: "title", widget: "string" }
-          - {label: "Slug", name: "slug", widget: "string",pattern: ['^[a-zA-Z0-9-_]+$', "Alphanumeric with dashes or underscores"]}
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Body", name: "body", widget: "markdown" }
-  - name: "Tags"
-    label: "Tags"
+collections:
+  - name: "tag"
+    label: "tag"
     create: true
-    identifier_field: "title"
-    slug: "{{fields.slug}}"
     folder: "content"
     fields:
           - { label: "Title", name: "title", widget: "string" }
-          - {label: "Slug", name: "slug", widget: "string",pattern: ['^[a-zA-Z0-9-_]+$', "Alphanumeric with dashes or underscores"]}
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Body", name: "body", widget: "markdown" }
           
