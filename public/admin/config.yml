@@ -23,4 +23,16 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Body", name: "body", widget: "markdown" }
+  - name: "Communities"
+    label: "communities"
+    extension: "json"
+    file: "public/communities.json"
+    fields:
+      - label: "Communities"
+        name: "communities"
+        widget: "list"
+        fields:
+          - { name: "name", label: "Name", widget: "string" }
+          - { name: "portal", label: "Portal", widget: "string" }
+          - { name: active, label: Active, widget: "boolean", default: true }
           
