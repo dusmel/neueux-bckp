@@ -1,0 +1,14 @@
+{
+  "communityList": [
+    {
+      "body": "darmstadt",
+      "portal": "https://darmstadt.dorium.vision/",
+      "active": true
+    },
+    {
+      "body": "kigali",
+      "portal": "https://darmstadt.dorium.vision/",
+      "active": false
+    }
+  ]
+}
